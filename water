@@ -1,0 +1,23 @@
+import java.util.*;
+class Main {
+  public static void main(String[] args) {
+    Scanner scan = new Scanner(System.in);
+    System.out.println("Seconds:");
+    double time = scan.nextDouble();
+    System.out.println("total time:");
+    double totTime = scan.nextDouble();
+    System.out.println("Enter number of cups");
+    double volume = scan.nextDouble();
+    volume = (totTime/time)*volume;
+    System.out.println("Total number of cups: " + volume);
+    volume = ((((volume/2)/2)/4)) * 231;
+    System.out.println("Number of cubic inches: " + volume);
+    System.out.println("cubic cm " + volume);
+    double ftpi =(1.333333333* 3.1415926535979);
+    volume = volume/ ftpi;
+    System.out.println("Radius cubed: " + volume);
+    volume = Math.cbrt(volume);
+    volume = volume*2.54;
+    System.out.println("Radius is: " + volume);
+  }
+}
